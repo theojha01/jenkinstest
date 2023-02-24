@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Run Cron Job') {
             steps {
-                sh 'echo "Hello,There!" > output.log'
+                sh 'echo "Hello,There!" > ${WORKSPACE}/output.log'
             }
         }
     }
